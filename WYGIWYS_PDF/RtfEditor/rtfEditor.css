@@ -1,0 +1,302 @@
+
+.t1 {
+	width:100%;
+	height:250px; 
+	box-sizing: border-box;         /* For IE and modern versions of Chrome */
+	-moz-box-sizing: border-box;    /* For Firefox                          */
+	-webkit-box-sizing: border-box;
+}
+
+.t2 {
+	width:100%;
+	height:150px; 
+	box-sizing: border-box;         /* For IE and modern versions of Chrome */
+	-moz-box-sizing: border-box;    /* For Firefox                          */
+	-webkit-box-sizing: border-box;
+}
+.t3 {
+	width:350px;
+	height:300px; 
+	box-sizing: border-box;         /* For IE and modern versions of Chrome */
+	-moz-box-sizing: border-box;    /* For Firefox                          */
+	-webkit-box-sizing: border-box;
+}
+
+/***********div de editor 									*/
+.editorInput{
+	clear:both;
+	min-height: 1px;
+
+	background-color: white;
+
+	/*border-top:2px solid #0A0A0A;
+	border-left:2px solid #0A0A0A;
+	border-right:1px double #eee;
+	border-bottom:1px double #eee;
+*/
+	outline:1px double #eee;
+	border-radius:3px;
+}
+
+.editorInput:hover{
+	cursor:text;
+}
+
+.editable[contenteditable="true"]{
+	outline:2px dotted #008AE6;
+}
+
+
+/********Menu RTF								*/
+.rtfMenu{
+	color:#aaa;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position:fixed !important;
+	background-color: #222222;
+	border:1px solid #008AE6;
+	opacity:0.8;
+	z-index:9999;
+	display:none;
+}
+
+.rtfMenu *{
+	max-height: 100%;
+}
+
+
+.rtfMenu ul{
+	padding:0px;
+	text-align:center;
+	height: 100% ;
+	margin:0px;
+}
+
+.rtfMenu li{
+	list-style-type: none;
+	height:14%;
+	margin:0px;
+	padding:0px;
+}
+
+.rtfMenu button{
+	padding:7px;
+	border-radius: 2px;
+	color: #428BCA;
+	border-color: rgba(0, 0, 0, 0);
+	background-color: #222222;
+	box-shadow: none;
+	opacity:0.8;
+	display:block;
+	cursor: pointer;
+	height:100%;
+	font-size:100%;
+	margin:0px;
+}
+
+.rtfMenu button:hover{
+	opacity:1;
+	background-color: #080808;
+}
+
+.rtfMenu button.active{
+	border:1px solid #428BCA;
+	opacity:1;
+	border-radius:5px;
+	background-color: #080808;
+}
+
+.rtfMenu ul li ul{
+	position:absolute;
+	display:none;
+	background-color: #222222;
+	padding:0px;
+	margin:0px;
+	left:-100%;
+	height:auto;
+}
+
+.rtfMenu ul li:hover ul{
+	display:block;
+}
+
+.rtfMenu ul li ul li{
+	padding:0px;
+	margin:0px;
+}
+
+.right ul li ul{
+	left:100%;
+}
+
+/*						Menu Horizontal	a									*/
+
+.horizontal ul li{
+	display:inline-block;
+	height: auto;
+	max-width:14%;
+}
+
+.horizontal ul li button{
+	width:100%;
+}
+
+.horizontal ul{
+	padding:0px;
+	margin:0px;
+}
+
+.horizontal ul li ul{
+	left:0px;
+	top:-32px;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+
+
+.horizontal .image{
+	left:0% !important;
+	top:-85%;
+	width:100%;
+}
+
+.horizontal .image ul {
+	width: 100% !important;
+	display: table;
+}
+
+.horizontal .image li {
+	display: table-cell;
+	width: 5% !important;
+	text-align: center;
+}
+
+
+.horizontal .image li input{
+	padding:0px;
+	margin:0px;
+	width:20%
+}
+.horizontal .image li button{
+	width:5% !important;
+}
+
+.horizontal .font ul, .horizontal .tools ul {
+	display:table;
+	width:100%;
+	background-color: red !important;
+}
+
+
+.horizontal .font li{
+	display:table-cell;
+	width:25%;
+	text-align: center;
+}
+.horizontal .tools li {
+	display:table-cell;
+	width:16% !important;
+	text-align: center;
+}
+
+.horizontal .font i, .horizontal .font select{
+	width:50%;
+	margin:0px;
+	padding:0px;
+}
+
+.horizontal .tools select{
+	padding:0px;
+	margin:0px;
+}
+
+/**Horizontal Down///////*/
+
+.down ul li ul{
+	left:0px;
+	width:100%;
+	top:80%;
+	margin:0px;
+	padding:0px;
+}
+
+.down .image{
+	width:100% !important;
+	top:85% !important;
+}
+
+
+/*****************Cada SubMenu					a						*/
+.b{
+	top:0px;
+}
+
+.align{
+	top:0px;
+}
+
+.list{
+	top:42%;
+	height:10px;
+}
+
+.image{
+	left:100% !important;
+	top:56%;
+	width:500%;
+}
+
+.image li input, .image li button{
+	display: inline-block !important;
+	width:10%;
+}
+.image li input{
+	width:80%;
+}
+
+.link{
+	top:62%;
+}
+
+.editorInput img{
+	max-height: 90%;
+	max-width: 90%;
+}
+
+.tools{
+	height:100% !important;
+	top:0px;
+}
+
+.font, .tools{
+	height:100% !important;
+	top:0px;
+	width:100%;
+}
+
+.font li{
+	height:25%;
+}
+
+.tools li{
+	width:25% !important;
+}
+
+.font i{
+	padding:7px;
+	border-radius: 2px;
+	color: #428BCA;
+	border-color: rgba(0, 0, 0, 0);
+	background-color: #222222;
+	box-shadow: none;
+	opacity:0.8;
+	cursor: default;
+	height:auto;
+	font-size:100%;
+	margin:0px;
+
+}
+.font select, .tools select{
+	width:80%;
+}
+

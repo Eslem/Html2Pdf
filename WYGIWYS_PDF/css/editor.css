@@ -1,0 +1,101 @@
+
+.panel{
+	width:8%;
+	position:fixed;
+	height:100%;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	background-color: #262626;
+	color:#fff;
+	margin-top: 50px;
+}
+
+.body{
+	width:92%;
+	position:absolute;
+	left:8%;
+	bottom:0px;
+	top:0px;
+	background-color:#eee;
+	margin:0px;
+	margin-top: 50px;
+	overflow:auto; 
+
+}
+
+#pdf{
+	/*width:595.2756px;
+	height:841.8898px;*/
+	width: calc(100vh * 0.7070707072);
+	height:auto;
+	border: 1px solid #eee;
+	word-wrap:break-word;
+	margin-left: auto ;
+	margin-right: auto ;
+	background-color: #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:18px;
+	font-size:12px;
+}
+
+div.hr {
+	background: #fff  no-repeat scroll center;
+	width: calc(100vh * 0.65);
+	height:.05em;
+	margin-left: auto ;
+	margin-right: auto ;
+	position:absolute;
+	bottom:0px;
+	text-align:right;
+	padding:0px;
+	border-top:1px dotted #aaa;
+	opacity:0.5;
+}
+
+.menu{
+	height:100%;
+}
+
+.menu ul{
+	height:100%;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+
+.menu li{
+	text-align: center;
+	width:100%;
+	list-style: none;
+	margin-top:10px;
+	height:16%;
+	font-size: 150%;
+	padding:0px;
+	margin:0px;
+}
+
+.menu button {
+	display:block; 
+	float: left;
+	width:100%; 
+	height:auto;
+	border:0;
+	outline:0;
+	background: none;
+	margin:0px;
+	padding:0px;
+	line-height : 100%;
+	text-align:center;
+	vertical-align:middle
+}
+.menu i {
+	display:block;
+	background: url("myimage.jpg") no-repeat scroll center center transparent;
+	height:80%;
+	width:100%; 
+	font-size: 200%;
+	margin:0px;
+	padding:0px;
+}

@@ -1,0 +1,159 @@
+
+
+[class*='col-']{
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+  background-color:red;
+}
+ 
+[class*='col-']:last-of-type {
+	
+}
+ 
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1  {width: 100%;}
+.col-2  {width: 50%;}
+.col-3  {width: 33.33%;}
+.col-4  {width: 25%;}
+.col-5  {width: 20%;}
+.col-6  {width: 16.6666666667%;}
+.col-7  {width: 14.2857142857%;}
+.col-8  {width: 12.5%;}
+.col-9  {width: 11.1111111111%;}
+.col-10 {width: 10%;}
+.col-11 {width: 9.09090909091%;}
+.col-12 {width: 8.33%;}
+
+.offset-1  {margin-left: 8.33%;}
+.offset-2  {margin-left: 16.66%;}
+.offset-3  {margin-left: 27.99%;}
+.offset-4  {margin-left: 33.32%;}
+.offset-5  {margin-left: 41.65%;}
+.offset-6  {margin-left: 49.98%;}
+.offset-7  {margin-left: 58.31%;}
+.offset-8  {margin-left: 66.64%;}
+.offset-9  {margin-left: 66.64%;}
+.offset-10 {margin-left: 83.3%;}
+.offset-11 {margin-left: 91.67%;}
+
+
+.module{
+	background-color: #eee;
+}
+
+
+/*										Each (formatPdf)						*/
+
+.col-1 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-1:last-of-type {
+  float: right;
+}
+
+.col-2 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-2:last-of-type {
+  float: right;
+}
+
+.col-3 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-3:last-of-type {
+  float: right;
+}
+
+.col-4 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-4:last-of-type {
+  float: right;
+}
+
+.col-5 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-5:last-of-type {
+  float: right;
+}
+
+.col-6 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-6:last-of-type {
+  float: right;
+}
+
+.col-7 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-7:last-of-type {
+  float: right;
+}
+
+.col-8 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-8:last-of-type {
+  float: right;
+}
+
+.col-9 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-9:last-of-type {
+  float: right;
+}
+
+.col-10 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-10:last-of-type {
+  float: right;
+}
+
+.col-11 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-11:last-of-type {
+  float: right;
+}
+
+.col-12 {
+  float: left;
+  margin:0px;
+  word-wrap: break-word;
+}
+.col-12:last-of-type {
+  float: right;
+}

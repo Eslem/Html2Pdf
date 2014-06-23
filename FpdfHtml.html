@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Lang" content="en">
+		<meta name="author" content="">
+		<meta http-equiv="Reply-to" content="@.com">
+		<meta name="generator" content="PhpED 6.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="creation-date" content="06/01/2011">
+		<meta name="revisit-after" content="15 days">
+		<title>Html 2 Pdf</title>
+		<link rel="stylesheet" type="text/css" href="../re/bootstrap/css/bootstrap.min.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<script type="text/javascript" src="../re/jquery.min.js"></script>
+		<script type="text/javascript" src="../re/bootstrap/js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			.topdf{
+				right: 10px;
+				position:fixed;
+			}
+		</style>
+	</head>
+
+	<body>
+		<button class="topdf btn btn-primary" id="btopdf">2Pdf <i class="fa fa-file-o"></i></button>
+
+		<div id="2pdf">
+			<h2>Hola mundo!</h2>
+			<p>cecwe cenicwececwe cenicwececwe cenicwececwe cenicwececwe cenicwececwe cenicwececwe cenicwececwe cenicwececwe cenicwececwe cenicwe</p>
+			
+			<button class="btn btn-info" onclick="addElements()">Add Elem <i class="fa fa-plus"></i></button>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				loadReady();
+			});
+
+			function loadReady(){
+				$("#btopdf").click(function(){
+					createPdf();
+				});
+			}
+
+			function createPdf(){
+				/*	$("#2pdf").each(function(){
+				createElement($(this));
+				});*/
+				savePdf();
+			}
+
+			function addElements(elem){
+				$.ajax({
+					url:"html2pdf.php",
+					data:{
+						wth:"addElem",
+						txt: "elemento Añadido",
+						h: 20,
+						w: 150,
+						border: 1						
+					},
+					type: "post",
+					success: function(){
+						
+					}
+				});
+			}
+
+			function savePdf(){
+				$.ajax({
+					url:"html2pdf.php",
+					data:{
+						wth:"makePdf"
+					},
+					type: "post",
+					success: function(){
+						window.open('pdf.pdf');
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
